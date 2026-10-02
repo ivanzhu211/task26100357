@@ -1,0 +1,840 @@
+{
+  "specs": [
+    {
+      "spec": "<1.4.2",
+      "version": "1.4.2rc1",
+      "expected": false
+    },
+    {
+      "spec": "<1.4.2",
+      "version": "1.4.1",
+      "expected": true
+    },
+    {
+      "spec": "<1.4.2",
+      "version": "1.4.2",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0,<1.4.2",
+      "version": "1.4.2rc1",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0,<1.4.2",
+      "version": "1.4.1",
+      "expected": true
+    },
+    {
+      "spec": ">=1.0,<1.4.2",
+      "version": "0.9",
+      "expected": false
+    },
+    {
+      "spec": "<2.0",
+      "version": "2.0.dev1",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0,<2.0",
+      "version": "2.0.dev1",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0,<2.0",
+      "version": "1.9rc1",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4.0",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4.1",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4rc1",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4.0rc1",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4.0.1",
+      "expected": true
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.5",
+      "expected": false
+    },
+    {
+      "spec": "==1.4.*",
+      "version": "1.4+local",
+      "expected": true
+    },
+    {
+      "spec": "~=2.2",
+      "version": "2.2",
+      "expected": true
+    },
+    {
+      "spec": "~=2.2",
+      "version": "2.9",
+      "expected": true
+    },
+    {
+      "spec": "~=2.2",
+      "version": "3.0",
+      "expected": false
+    },
+    {
+      "spec": "~=2.2",
+      "version": "2.2rc1",
+      "expected": false
+    },
+    {
+      "spec": "~=2.2",
+      "version": "2.1.9",
+      "expected": false
+    },
+    {
+      "spec": "~=2.2.0",
+      "version": "2.2.5",
+      "expected": true
+    },
+    {
+      "spec": "~=2.2.0",
+      "version": "2.3.0",
+      "expected": false
+    },
+    {
+      "spec": "~=1.4.5.0",
+      "version": "1.4.5.7",
+      "expected": true
+    },
+    {
+      "spec": "~=1.4.5.0",
+      "version": "1.4.6",
+      "expected": false
+    },
+    {
+      "spec": "==1.0",
+      "version": "1.0",
+      "expected": true
+    },
+    {
+      "spec": "==1.0",
+      "version": "1.0.0",
+      "expected": true
+    },
+    {
+      "spec": "==1.0",
+      "version": "1.0+local",
+      "expected": true
+    },
+    {
+      "spec": "==1.0",
+      "version": "1.0rc1",
+      "expected": false
+    },
+    {
+      "spec": "==1.0+foo",
+      "version": "1.0+foo",
+      "expected": true
+    },
+    {
+      "spec": "==1.0+foo",
+      "version": "1.0+bar",
+      "expected": false
+    },
+    {
+      "spec": "==1.0+foo",
+      "version": "1.0",
+      "expected": false
+    },
+    {
+      "spec": "!=1.1",
+      "version": "1.1.0",
+      "expected": false
+    },
+    {
+      "spec": "!=1.1",
+      "version": "1.1rc1",
+      "expected": true
+    },
+    {
+      "spec": "!=1.1",
+      "version": "1.2",
+      "expected": true
+    },
+    {
+      "spec": "!=1.1.*",
+      "version": "1.1.5",
+      "expected": false
+    },
+    {
+      "spec": "!=1.1.*",
+      "version": "1.2",
+      "expected": true
+    },
+    {
+      "spec": ">=1!1.0",
+      "version": "1!1.0",
+      "expected": true
+    },
+    {
+      "spec": ">=1!1.0",
+      "version": "2.0",
+      "expected": false
+    },
+    {
+      "spec": "==1!1.0.*",
+      "version": "1!1.0.5",
+      "expected": true
+    },
+    {
+      "spec": "==1!1.0.*",
+      "version": "1.0.5",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0.post1",
+      "version": "1.0",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0.post1",
+      "version": "1.0.post2",
+      "expected": true
+    },
+    {
+      "spec": "<=1.0",
+      "version": "1.0.dev1",
+      "expected": true
+    },
+    {
+      "spec": "<=1.0",
+      "version": "1.0",
+      "expected": true
+    },
+    {
+      "spec": ">1.0",
+      "version": "1.0.post1",
+      "expected": false
+    },
+    {
+      "spec": ">1.0",
+      "version": "1.0.0.1",
+      "expected": true
+    },
+    {
+      "spec": "===1.0",
+      "version": "1.0",
+      "expected": true
+    },
+    {
+      "spec": "",
+      "version": "1.0",
+      "expected": true
+    },
+    {
+      "spec": "",
+      "version": "1.0rc1",
+      "expected": true
+    },
+    {
+      "spec": ">=1.0, !=1.1.*, <2",
+      "version": "1.1.5",
+      "expected": false
+    },
+    {
+      "spec": ">=1.0, !=1.1.*, <2",
+      "version": "1.2",
+      "expected": true
+    },
+    {
+      "spec": ">=1.0, !=1.1.*, <2",
+      "version": "1.2rc1",
+      "expected": true
+    },
+    {
+      "spec": "~=0.6",
+      "version": "0.6.9",
+      "expected": true
+    },
+    {
+      "spec": "~=0.6",
+      "version": "0.7",
+      "expected": true
+    },
+    {
+      "spec": "==2.2.*",
+      "version": "2.2.0.dev1",
+      "expected": true
+    },
+    {
+      "spec": "<1.0",
+      "version": "0.9.9",
+      "expected": true
+    },
+    {
+      "spec": "<1.0",
+      "version": "1.0a1",
+      "expected": false
+    },
+    {
+      "spec": "<=1.0",
+      "version": "1.0rc1",
+      "expected": true
+    },
+    {
+      "spec": ">=1.0rc1",
+      "version": "1.0rc1",
+      "expected": true
+    },
+    {
+      "spec": ">=1.0rc1",
+      "version": "1.0",
+      "expected": true
+    },
+    {
+      "spec": "<1.4.2",
+      "version": "1.4.2.dev1",
+      "expected": false
+    },
+    {
+      "spec": "<1.4.2",
+      "version": "1.4.1rc1",
+      "expected": true
+    },
+    {
+      "spec": "<2",
+      "version": "2rc1",
+      "expected": false
+    },
+    {
+      "spec": "<2",
+      "version": "2.dev1",
+      "expected": false
+    },
+    {
+      "spec": "<2",
+      "version": "1.9.9",
+      "expected": true
+    },
+    {
+      "spec": ">1.0",
+      "version": "1.0.post1",
+      "expected": false
+    },
+    {
+      "spec": ">1.0",
+      "version": "1.0+local",
+      "expected": false
+    },
+    {
+      "spec": ">1.0",
+      "version": "1.0.1",
+      "expected": true
+    },
+    {
+      "spec": ">1.0.post1",
+      "version": "1.0.post2",
+      "expected": true
+    },
+    {
+      "spec": ">1.0.post1",
+      "version": "1.0.post1",
+      "expected": false
+    },
+    {
+      "spec": "<=1.0",
+      "version": "1.0+local",
+      "expected": true
+    },
+    {
+      "spec": ">=1.0",
+      "version": "1.0+local",
+      "expected": true
+    },
+    {
+      "spec": "==1.0.*",
+      "version": "1.0.0.5",
+      "expected": true
+    },
+    {
+      "spec": "==1.0.*",
+      "version": "1.0.1.5",
+      "expected": true
+    },
+    {
+      "spec": "~=1!2.2",
+      "version": "1!2.5",
+      "expected": true
+    },
+    {
+      "spec": "~=1!2.2",
+      "version": "2.5",
+      "expected": false
+    },
+    {
+      "spec": "~=2.2rc1",
+      "version": "2.2rc2",
+      "expected": true
+    },
+    {
+      "spec": "~=2.2rc1",
+      "version": "2.2",
+      "expected": true
+    },
+    {
+      "spec": "~=2.2rc1",
+      "version": "2.3",
+      "expected": true
+    }
+  ],
+  "compares": [
+    {
+      "a": "1.10.0",
+      "b": "1.9.0",
+      "expected": 1
+    },
+    {
+      "a": "1.0",
+      "b": "1.0.0",
+      "expected": 0
+    },
+    {
+      "a": "v1.0",
+      "b": "1.0",
+      "expected": 0
+    },
+    {
+      "a": "1.0 ",
+      "b": " 1.0",
+      "expected": 0
+    },
+    {
+      "a": "1.0.dev1",
+      "b": "1.0a1",
+      "expected": -1
+    },
+    {
+      "a": "1.0a1",
+      "b": "1.0a1.dev1",
+      "expected": 1
+    },
+    {
+      "a": "1.0a1.dev1",
+      "b": "1.0a1",
+      "expected": -1
+    },
+    {
+      "a": "1.0a1",
+      "b": "1.0a1.post1",
+      "expected": -1
+    },
+    {
+      "a": "1.0a1.post1",
+      "b": "1.0a2",
+      "expected": -1
+    },
+    {
+      "a": "1.0a1",
+      "b": "1.0b1",
+      "expected": -1
+    },
+    {
+      "a": "1.0b1",
+      "b": "1.0rc1",
+      "expected": -1
+    },
+    {
+      "a": "1.0rc1",
+      "b": "1.0",
+      "expected": -1
+    },
+    {
+      "a": "1.0c1",
+      "b": "1.0rc1",
+      "expected": 0
+    },
+    {
+      "a": "1.0alpha1",
+      "b": "1.0a1",
+      "expected": 0
+    },
+    {
+      "a": "1.0_beta1",
+      "b": "1.0b1",
+      "expected": 0
+    },
+    {
+      "a": "1.0-pre1",
+      "b": "1.0rc1",
+      "expected": 0
+    },
+    {
+      "a": "1.0",
+      "b": "1.0.post1",
+      "expected": -1
+    },
+    {
+      "a": "1.0-1",
+      "b": "1.0.post1",
+      "expected": 0
+    },
+    {
+      "a": "1.0rev1",
+      "b": "1.0.post1",
+      "expected": 0
+    },
+    {
+      "a": "1.0",
+      "b": "1.0+abc",
+      "expected": -1
+    },
+    {
+      "a": "1.0+abc",
+      "b": "1.0.post1",
+      "expected": -1
+    },
+    {
+      "a": "1.0+abc.1",
+      "b": "1.0+abc.2",
+      "expected": -1
+    },
+    {
+      "a": "1.0+1",
+      "b": "1.0+a",
+      "expected": 1
+    },
+    {
+      "a": "1.0",
+      "b": "1.0.dev1",
+      "expected": 1
+    },
+    {
+      "a": "1.0.dev1",
+      "b": "1.0.dev2",
+      "expected": -1
+    },
+    {
+      "a": "1!1.0",
+      "b": "2.0",
+      "expected": 1
+    },
+    {
+      "a": "1.0",
+      "b": "1!0.1",
+      "expected": -1
+    },
+    {
+      "a": "1!1.0",
+      "b": "1!1.0",
+      "expected": 0
+    },
+    {
+      "a": "0.9",
+      "b": "1.0a1",
+      "expected": -1
+    },
+    {
+      "a": "1.0+foo",
+      "b": "1.0+bar",
+      "expected": 1
+    },
+    {
+      "a": "1.0+foo",
+      "b": "1.0+foo.1",
+      "expected": -1
+    },
+    {
+      "a": "2.0rc1",
+      "b": "2.0",
+      "expected": -1
+    },
+    {
+      "a": "1.5.2",
+      "b": "1.5.10",
+      "expected": -1
+    }
+  ],
+  "valids": [
+    {
+      "version": "1.0",
+      "valid": true
+    },
+    {
+      "version": "v1.0",
+      "valid": true
+    },
+    {
+      "version": "1!1.0",
+      "valid": true
+    },
+    {
+      "version": "1.0a1",
+      "valid": true
+    },
+    {
+      "version": "1.0.alpha1",
+      "valid": true
+    },
+    {
+      "version": "1.0_a1",
+      "valid": true
+    },
+    {
+      "version": "1.0-a1",
+      "valid": true
+    },
+    {
+      "version": "1.0b2",
+      "valid": true
+    },
+    {
+      "version": "1.0rc1",
+      "valid": true
+    },
+    {
+      "version": "1.0c1",
+      "valid": true
+    },
+    {
+      "version": "1.0pre1",
+      "valid": true
+    },
+    {
+      "version": "1.0preview1",
+      "valid": true
+    },
+    {
+      "version": "1.0.post1",
+      "valid": true
+    },
+    {
+      "version": "1.0-1",
+      "valid": true
+    },
+    {
+      "version": "1.0rev1",
+      "valid": true
+    },
+    {
+      "version": "1.0r1",
+      "valid": true
+    },
+    {
+      "version": "1.0.dev1",
+      "valid": true
+    },
+    {
+      "version": "1.0dev1",
+      "valid": true
+    },
+    {
+      "version": "1.0+local.1",
+      "valid": true
+    },
+    {
+      "version": "1.0+ubuntu-1",
+      "valid": true
+    },
+    {
+      "version": "1.0+a_b.c",
+      "valid": true
+    },
+    {
+      "version": "1!1.0a1.post2.dev3+x",
+      "valid": true
+    },
+    {
+      "version": "1.0.0.0.0.1",
+      "valid": true
+    },
+    {
+      "version": "0.9",
+      "valid": true
+    },
+    {
+      "version": "2019.10",
+      "valid": true
+    },
+    {
+      "version": "1.0..1",
+      "valid": false
+    },
+    {
+      "version": "abc",
+      "valid": false
+    },
+    {
+      "version": "1.0-",
+      "valid": false
+    },
+    {
+      "version": "1.0+",
+      "valid": false
+    },
+    {
+      "version": "1!1!1.0",
+      "valid": false
+    },
+    {
+      "version": "1.0.*",
+      "valid": false
+    },
+    {
+      "version": "",
+      "valid": false
+    },
+    {
+      "version": "1.0_",
+      "valid": false
+    },
+    {
+      "version": "1.0dev",
+      "valid": true
+    },
+    {
+      "version": "1.0+foo..bar",
+      "valid": false
+    }
+  ],
+  "specValids": [
+    {
+      "spec": ">=1.0,<1.4.2",
+      "valid": true
+    },
+    {
+      "spec": "~=2.2",
+      "valid": true
+    },
+    {
+      "spec": "==1.4.*",
+      "valid": true
+    },
+    {
+      "spec": "!=1.1.*",
+      "valid": true
+    },
+    {
+      "spec": "===1.0",
+      "valid": true
+    },
+    {
+      "spec": "<2",
+      "valid": true
+    },
+    {
+      "spec": ">=1.0, !=1.1.*, <2",
+      "valid": true
+    },
+    {
+      "spec": "",
+      "valid": true
+    },
+    {
+      "spec": "  ==1.0 ",
+      "valid": true
+    },
+    {
+      "spec": ">= 1.0",
+      "valid": true
+    },
+    {
+      "spec": "==1!1.0.*",
+      "valid": true
+    },
+    {
+      "spec": "~=1.4.5.0",
+      "valid": true
+    },
+    {
+      "spec": "==1.0+foo",
+      "valid": true
+    },
+    {
+      "spec": ">=1.0,,<2",
+      "valid": true
+    },
+    {
+      "spec": "~=2",
+      "valid": false
+    },
+    {
+      "spec": ">=1.0+foo",
+      "valid": false
+    },
+    {
+      "spec": "<1.0+foo",
+      "valid": false
+    },
+    {
+      "spec": "~=1.0+foo",
+      "valid": false
+    },
+    {
+      "spec": "=>1.0",
+      "valid": false
+    },
+    {
+      "spec": "><1.0",
+      "valid": false
+    },
+    {
+      "spec": "==",
+      "valid": false
+    },
+    {
+      "spec": "~=",
+      "valid": false
+    },
+    {
+      "spec": "<1.0.*",
+      "valid": false
+    },
+    {
+      "spec": ">1.0.*",
+      "valid": false
+    },
+    {
+      "spec": "~=1.0.*",
+      "valid": false
+    },
+    {
+      "spec": "==1.0.*.rc1",
+      "valid": false
+    },
+    {
+      "spec": "==1.0rc1.*",
+      "valid": false
+    },
+    {
+      "spec": "==1.0..1",
+      "valid": false
+    },
+    {
+      "spec": "1.0",
+      "valid": false
+    },
+    {
+      "spec": ">=abc",
+      "valid": false
+    }
+  ]
+}
